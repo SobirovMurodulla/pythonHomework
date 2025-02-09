@@ -72,30 +72,15 @@ print("Reversed string: ", reversed_string)
 #10-question
 word_count = 1
 sentence_input = str(input("Enter a sentence: "))
-# words = sentence_input.split()
-for char in sentence_input:
-    if char == " ":
-        word_count += 1
-    else:
-        continue
-print("Number of words: ",word_count)
-# print("Number of words: ",len(words))
+words = sentence_input.split()
+print("Number of words: ",len(words))
 
 #11-question
-digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 n = str(input('Enter a string: '))
-# list_digits = []
-for char in n:
-    if char in digits:
-        print("Yes")
-    else:
-        print("No")
-#         list_digits.append(char)
-#
-# if len(list_digits) !=0:
-#     print("String contains these digits: ", *list_digits)
-# else:
-#     print("String does not contain any digits")
+if any(char.isdigit()for char in n):
+    print("Yes")
+else:
+    print("No")
 
 #12-question
 a = list(map(str, input().split()))

@@ -5,18 +5,7 @@ print(round(n,2))
 
 #2-question
 a,b,c = map(int,input().split())
-if a>b:
-    if a>c:
-        print(a)
-    else:
-        print(c)
-elif b>a:
-    if b>c:
-        print(b)
-    else:
-        print(c)
-else:
-    print(c)
+print(max(a,b,c))
 
 #3-question
 kilometers = float(input())
